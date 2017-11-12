@@ -1,14 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatCardModule, MatMenuModule, MatToolbarModule, MatIconModule,MatGridListModule} from '@angular/material';
+import { MatButtonModule, MatCardModule, MatMenuModule, MatToolbarModule, MatIconModule,MatGridListModule, MatListModule} from '@angular/material';
 
 import { AppComponent } from './app.component';
+import { PlaylistComponent } from './playlist/playlist.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PlaylistComponent
   ],
   imports: [
     BrowserModule,
@@ -18,7 +20,8 @@ import { AppComponent } from './app.component';
     MatMenuModule,
     MatToolbarModule,
     MatIconModule,
-    MatGridListModule
+    MatGridListModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
